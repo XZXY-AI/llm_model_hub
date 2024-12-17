@@ -86,9 +86,9 @@ const rawColumns = [
         ariaLabel={`${item.id} actions`}
         expandToViewport={true}
         items={[
-          { id: 'view', text: 'View details' },
-          { id: 'edit', text: 'Edit' },
-          { id: 'delete', text: 'Delete' },
+          { id: 'view', text: '查看详情 ' },
+          { id: 'edit', text: '编辑' },
+          { id: 'delete', text: '删除' },
         ]}
       />
     ),
@@ -122,7 +122,7 @@ const editableColumns = {
           <Select
             autoFocus={true}
             expandToViewport={true}
-            ariaLabel="Select desired state"
+            ariaLabel="选择所需状态"
             options={options}
             onChange={event => {
               setValue(event.detail.selectedOption.value);
@@ -154,12 +154,12 @@ const editableColumns = {
         return (
           <Input
             autoFocus={true}
-            ariaLabel="Edit domain name"
+            ariaLabel="编辑域名"
             value={currentValue ?? item.domainName}
             onChange={event => {
               setValue(event.detail.value);
             }}
-            placeholder="Enter domain name"
+            placeholder="输入域名"
           />
         );
       },
@@ -192,7 +192,7 @@ const editableColumns = {
             value={currentValue ?? item.sslCertificate}
             onChange={event => setValue(event.detail.value)}
             options={options}
-            enteredTextLabel={value => `Use custom certificate "${value}"`}
+            enteredTextLabel={value => `使用自定义证书 "${value}"`}
             expandToViewport={true}
             ariaLabel="SSL Certificate"
             clearAriaLabel="clear"

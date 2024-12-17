@@ -22,10 +22,10 @@ const i18nStrings = {
 };
 
 const profileActions = [
-  { id: 'profile', text: 'Profile' },
-  { id: 'preferences', text: 'Preferences' },
-  { id: 'security', text: 'Security' },
-  { id: 'signout', text: 'Sign out' }
+  { id: 'profile', text: '配置' },
+  { id: 'preferences', text: '偏好' },
+  { id: 'security', text: '安全' },
+  { id: 'signout', text: '退出' }
 ];
 
 
@@ -85,7 +85,7 @@ export const TopNav = () => {
               setModelSettingVisible(true)
             }
           },
-          items: [{ id: 'profile', text: 'Profile' },
+          items: [{ id: 'profile', text: '配置' },
             { id: "signout", text: t('signout'),href: "/signout"}
           ],
         },

@@ -5,7 +5,7 @@ import BreadcrumbGroup, { BreadcrumbGroupProps } from '@cloudscape-design/compon
 
 export const jobsBreadcrumbs = [
   {
-    text: 'Jobs',
+    text: '项目',
     href: '/jobs',
   },
 ];
@@ -13,21 +13,21 @@ export const jobsBreadcrumbs = [
 export const createjobBreadcrumbs = [
   ...jobsBreadcrumbs,
   {
-    text: 'Create Job',
+    text: '创建项目',
     href: '/jobs/createjob',
   },
 ];
 
 export const endpointsBreadcrumbs = [
   {
-    text: 'Endpoints',
+    text: '终端管理',
     href: '/endpoints',
   },
 ];
 
 export const chatBreadcrumbs = [
   {
-    text: 'Playground',
+    text: '环境',
     href: '/playground',
   },
 ];
@@ -37,7 +37,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbGroupProps['items'] })
   return (
     <BreadcrumbGroup
       items={[{ text: 'Model Hub', href: '/jobs' }, ...items]}
-      expandAriaLabel="Show path"
+      expandAriaLabel="展示路径"
       ariaLabel="Breadcrumbs"
     />
   );

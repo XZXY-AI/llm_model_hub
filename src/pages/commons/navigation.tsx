@@ -4,25 +4,25 @@ import React from 'react';
 import  { SideNavigationProps,SideNavigation,Badge} from '@cloudscape-design/components';
 import i18n from '../../common/i18n';
 
-const navHeader = { text: 'Service', href: '#/' };
+const navHeader = { text: '服务中心', href: '#/' };
 export const navItems: SideNavigationProps['items'] = [
   {
     type: 'section',
-    text: 'Train Management',
+    text: '模型训练服务',
     items: [
-      { type: 'link', text: 'Training Jobs', href: '/jobs' },
+      { type: 'link', text: '模型训练', href: '/jobs' },
     ],
   },
   {
     type: 'section',
-    text: 'Endpoint Management',
+    text: '终端服务',
     items: [
-      { type: 'link', text: 'Endpoints', href: '/endpoints' },
+      { type: 'link', text: '终端', href: '/endpoints' },
     ],
   },
   {
     type: 'section',
-    text: 'Playground',
+    text: '演示',
     items: [
       { type: 'link', text: 'Chat', href: '/chat' },
     ],

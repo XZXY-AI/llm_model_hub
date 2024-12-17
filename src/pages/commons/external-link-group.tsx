@@ -34,7 +34,7 @@ export function ExternalLinkGroup({
   variant = 'default',
 }: ExternalLinkGroupProps) {
   const externalIcon = (
-    <span role="img" aria-label="Links open in a new tab">
+    <span role="img" aria-label="链接在新选项卡中打开">
       <Icon name="external" size="inherit" />
     </span>
   );

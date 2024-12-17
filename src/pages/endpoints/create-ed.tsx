@@ -261,7 +261,7 @@ const SetExtraParamsInput = ({ data, setData, readOnly }: SelectQuantTypeProps) 
   return (
     <SpaceBetween size='xs'>
       <FormField
-        label="max-model-len"
+        label="最大长度"
         description="模型上下文最大长度，不能超过kv cache的size,默认值12288"
         stretch={false}
       >
@@ -275,7 +275,7 @@ const SetExtraParamsInput = ({ data, setData, readOnly }: SelectQuantTypeProps) 
         />
       </FormField>
       <FormField
-        label="tensor-parallel-size"
+        label="tensor并行度"
         description="tensor并行度,默认是实例的GPU数量"
         stretch={false}
       >
@@ -289,7 +289,7 @@ const SetExtraParamsInput = ({ data, setData, readOnly }: SelectQuantTypeProps) 
         />
       </FormField>
       <FormField
-        label="enable-prefix-caching"
+        label="缓存"
         description="是否启用prefix caching"
         stretch={false}
       >
@@ -305,7 +305,7 @@ const SetExtraParamsInput = ({ data, setData, readOnly }: SelectQuantTypeProps) 
         </Toggle>
       </FormField>
       <FormField
-        label="enfore-eager"
+        label="即时模式"
         description="是否启用PyTorch eager-mode，默认False"
         stretch={false}
       >
@@ -321,7 +321,7 @@ const SetExtraParamsInput = ({ data, setData, readOnly }: SelectQuantTypeProps) 
         </Toggle>
       </FormField>
       <FormField
-        label="limit-mm-per-prompt"
+        label="数量限制"
         description="一个请求最大支持图片或者video数量，默认是image=1，设置值格式为 image=N,video=M"
         stretch={false}
       >
@@ -497,7 +497,7 @@ export const DeployModelModal = ({
       header="Deploy model as endpoint"
     ><SpaceBetween size="l">
         <FormField
-          label="Model Name"
+          label="模型名称"
           stretch={false}
           description="select a supported Model"
           i18nStrings={{ errorIconAriaLabel: 'Error' }}
@@ -519,7 +519,7 @@ export const DeployModelModal = ({
         </FormField>
 
         <FormField
-          label="Instance Type"
+          label="实例类型"
           // description="Select a Instance type to deploy the model."
           description={<Link href={`${instanceCalculator}`} external>使用机型计算器估算</Link>}
 
@@ -541,7 +541,7 @@ export const DeployModelModal = ({
         </FormField>
 
         <FormField
-          label="Engine Type"
+          label="引擎模型"
           stretch={false}
           errorText={errors.engine}
           description={<Link href='https://docs.djl.ai/docs/serving/serving/docs/lmi/user_guides/vllm_user_guide.html' external>各类引擎支持模型信息</Link>}

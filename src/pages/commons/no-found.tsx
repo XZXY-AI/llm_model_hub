@@ -18,7 +18,7 @@ const breadcrumbsItems = [
 
 
 const Breadcrumbs = () => (
-    <BreadcrumbGroup items={breadcrumbsItems} expandAriaLabel="Show path" ariaLabel="Breadcrumbs" />
+    <BreadcrumbGroup items={breadcrumbsItems} expandAriaLabel="展示路径" ariaLabel="Breadcrumbs" />
   );
 
 
@@ -35,12 +35,12 @@ const NotFound = () => {
         <ContentLayout
           header={
             <Header variant="h1" info={<Link variant="info">Info</Link>}>
-              Not ready
+              正在加载
             </Header>
           }
         >
             <br/><br/>
-          <h1>Page not ready yet</h1>
+          <h1>页面正在加载，请耐心等待</h1>
         </ContentLayout>
       }
       onToolsChange={({ detail }) => setToolsOpen(detail.open)}

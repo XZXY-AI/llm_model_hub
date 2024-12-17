@@ -37,7 +37,7 @@ const toolsFooter = (
   <>
     <h3>
       Learn more{' '}
-      <span role="img" aria-label="Icon external Link">
+      <span role="img" aria-label="图标外部链接">
         <Icon name="external" />
       </span>
     </h3>

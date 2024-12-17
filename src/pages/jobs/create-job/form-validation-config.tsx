@@ -39,26 +39,26 @@ const validationConfig: Record<
   string,
   Array<{ validate: ValidationFunction; errorText?: ValidationText; warningText?: ValidationText }>
 > = {
-  job_name: [{ validate: validateEmpty, errorText: 'Job name is required.' }],
-  model_name: [{ validate: validateEmpty, errorText: 'Model name is required.' }],
-  prompt_template: [{ validate: validateEmpty, errorText: 'Prompt template name is required.' }],
-  job_type: [{ validate: validateEmpty, errorText: 'Finetune type is required.' }],
+  job_name: [{ validate: validateEmpty, errorText: '请填写项目名称.' }],
+  model_name: [{ validate: validateEmpty, errorText: '请填写模型名称.' }],
+  prompt_template: [{ validate: validateEmpty, errorText: '请填写提示模板.' }],
+  job_type: [{ validate: validateEmpty, errorText: '请填写微调类型.' }],
   // dataset:[{ validate: validateEmpty, errorText: 'Dataset is required.' }],
-  datasetInfo:[{ validate: validateEmpty, errorText: 'DatasetInfo is required.' }],
-  stage: [{ validate: validateEmpty, errorText: 'Training Stage type is required.' }],
-  instance_type: [{ validate: validateEmpty, errorText: 'Instance type is required.' }],
+  datasetInfo:[{ validate: validateEmpty, errorText: '请填写数据集信息.' }],
+  stage: [{ validate: validateEmpty, errorText: '请填写训练阶段.' }],
+  instance_type: [{ validate: validateEmpty, errorText: '请填写实例类型.' }],
   // instance_num: [{ validate: validateEmpty, errorText: 'Instance amount is required.' },
   //   {validate:validateNumers,errorText: 'Only integer is supported.' }
   // ],
   s3BucketSelectedOption: [
     {
       validate: (selectedOption: SelectProps.Option) => validateEmpty(selectedOption?.value),
-      errorText: 'S3 bucket is required.',
+      errorText: '请填写S3 bucket .',
     },
     {
       validate: (selectedOption: SelectProps.Option) => validateS3Bucket(selectedOption?.label || ''),
       errorText:
-        "Model Hub isn't allowed to access to this bucket. You must enable access control lists (ACL) for the bucket.",
+        "模型中心(Model Hub)没有权限访问这个bucket。您必须为存储桶启用访问控制列表(ACL).",
     },
   ],
 };

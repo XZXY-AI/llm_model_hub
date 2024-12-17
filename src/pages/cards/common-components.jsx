@@ -6,18 +6,18 @@ import { resourcesBreadcrumbs } from '../../common/breadcrumbs';
 import { ExternalLinkGroup } from '../commons';
 
 export const Breadcrumbs = () => (
-  <BreadcrumbGroup items={resourcesBreadcrumbs} expandAriaLabel="Show path" ariaLabel="Breadcrumbs" />
+  <BreadcrumbGroup items={resourcesBreadcrumbs} expandAriaLabel="展示路径" ariaLabel="Breadcrumbs" />
 );
 
 const toolsFooter = (
   <ExternalLinkGroup
     items={[
       {
-        text: 'Working with distributions',
+        text: '配置分配',
         href: 'https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html',
       },
       {
-        text: 'Values that CloudFront displays on the console',
+        text: '控制台输出',
         href: 'https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-returned.html',
       },
     ]}
@@ -26,9 +26,7 @@ const toolsFooter = (
 export const ToolsContent = () => (
   <HelpPanel footer={toolsFooter} header={<h2>Distributions</h2>}>
     <p>
-      View your current distributions and related information such as the associated domain names, delivery methods, SSL
-      certificates, and more. To drill down even further into the details, choose the name of an individual
-      distribution.
+      查看当前分发版和相关信息，例如关联的域名、交付方式、SSL证书等。要进一步深入了解详细信息，请选择单个分发版的名称
     </p>
   </HelpPanel>
 );

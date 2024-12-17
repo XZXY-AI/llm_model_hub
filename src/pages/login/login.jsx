@@ -160,7 +160,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign Up
+          注册
           </Typography>
          
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
@@ -171,7 +171,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               required
               fullWidth
               id="username"
-              label="Username"
+              label="用户名"
               name="username"
               value ={username??''}
               onChange = {(event) => { setUsername(event.target.value);}}
@@ -183,7 +183,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               required
               fullWidth
               id="email"
-              label="Email"
+              label="邮箱"
               name="email"
               type="email"
               value ={email??''}
@@ -197,7 +197,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               required
               fullWidth
               name="password"
-              label="Password"
+              label="密码"
               type="password"
               id="password"
               value ={password??''}
@@ -212,7 +212,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               required
               fullWidth
               name="confirmcode"
-              label="Confirm code"
+              label="确认密码"
               id="confirmcode"
               value ={confirmCode??''}
               onChange = {(event) => { setConfirmCode(event.target.value);}}
@@ -230,7 +230,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               color='secondary'
               sx={{ mt: 3, mb: 2,}}
             >
-              {"Sign Up"}
+              {"注册"}
             </LoadingButton>
             :
             <LoadingButton
@@ -241,7 +241,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               color='warning'
               sx={{ mt: 3, mb: 2,}}
             >
-              {"Confirm"}
+              {"确认"}
             </LoadingButton>
             }
             
@@ -253,7 +253,7 @@ const SignUp = ({setSignType,username,setUsername,password,setPassword}) =>{
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2" onClick={()=>setSignType('signin')}>
-                  {"Already have an account. Sign In"}
+                  {"已有账户. 登录"}
                 </Link>
               </Grid>
             </Grid>
@@ -342,7 +342,7 @@ const SignIn = ({setSession,setSignType,username,setUsername,password,setPasswor
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+          登录
           </Typography>
          
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
@@ -353,7 +353,7 @@ const SignIn = ({setSession,setSignType,username,setUsername,password,setPasswor
               required
               fullWidth
               id="username"
-              label="Username"
+              label="用户名"
               name="username"
               value ={username??''}
               onChange = {(event) => { setUsername(event.target.value);}}
@@ -366,7 +366,7 @@ const SignIn = ({setSession,setSignType,username,setUsername,password,setPasswor
               required
               fullWidth
               name="password"
-              label="Password"
+              label="密码"
               type="password"
               id="password"
               value ={password??''}
@@ -381,7 +381,7 @@ const SignIn = ({setSession,setSignType,username,setUsername,password,setPasswor
                   setLocalStoredCred({checked:event.target.checked});
                 }}
                color="primary" />}
-              label="Remember me"
+              label="记住密码"
             />
             <LoadingButton
               type="submit"
@@ -390,7 +390,7 @@ const SignIn = ({setSession,setSignType,username,setUsername,password,setPasswor
               variant="contained"
               sx={{ mt: 3, mb: 2}}
             >
-              {"Sign In"}
+              {"登录"}
             </LoadingButton>
             {/* <Button
              fullWidth

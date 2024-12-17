@@ -70,9 +70,9 @@ function DetailsCards({ loadHelpPanelContent }) {
       filter={
         <TextFilter
           {...filterProps}
-          filteringAriaLabel="Filter distributions"
-          filteringPlaceholder="Find distributions"
-          filteringClearAriaLabel="Clear"
+          filteringAriaLabel="过滤数据"
+          filteringPlaceholder="查找数据"
+          filteringClearAriaLabel="清除"
           countText={getTextFilterCounterText(filteredItemsCount)}
           disabled={loading}
         />
@@ -81,8 +81,8 @@ function DetailsCards({ loadHelpPanelContent }) {
       preferences={
         <CollectionPreferences
           title="Preferences"
-          confirmLabel="Confirm"
-          cancelLabel="Cancel"
+          confirmLabel="确认"
+          cancelLabel="取消"
           disabled={loading}
           preferences={preferences}
           onConfirm={({ detail }) => setPreferences(detail)}
