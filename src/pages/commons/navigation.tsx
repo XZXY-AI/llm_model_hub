@@ -15,9 +15,9 @@ export const navItems: SideNavigationProps['items'] = [
   },
   {
     type: 'section',
-    text: '终端服务',
+    text: '模型部署',
     items: [
-      { type: 'link', text: '终端', href: '/endpoints' },
+      { type: 'link', text: '部署节点', href: '/endpoints' },
     ],
   },
   {
@@ -33,7 +33,7 @@ export const navItems: SideNavigationProps['items'] = [
     items: [
       { type: 'link', external: true, 
       info: <Badge color="green">必读</Badge>,
-      text: '使用说明', href: 'https://amzn-chn.feishu.cn/docx/QniUdr7FroxShfxeoPacLJKtnXf' },
+      text: '使用说明', href: 'https://iqzeljuzeco.feishu.cn/wiki/OQZBwllXXiyy74k01G6cdKhXnxg' },
     ],
   }, 
 ];

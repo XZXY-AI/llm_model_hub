@@ -50,7 +50,7 @@ function SignOut(){
     navigate("/login");
     signout();
   },[])
-  return <h1>sign out</h1>;
+  return <h1>退出</h1>;
 }
 
 
